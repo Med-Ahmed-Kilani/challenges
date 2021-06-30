@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, Text, View, StatusBar } from "react-native";
+import { StyleSheet, Text, View, StatusBar, Alert } from "react-native";
+import { Button } from "react-native-paper";
 import Header from "../components/Header";
 
 const Exercice2 = ({ navigation }) => {
@@ -8,6 +9,14 @@ const Exercice2 = ({ navigation }) => {
     <View style={styles.container}>
       <Header nav={navigation} />
       <Text>Hi Exercice2</Text>
+      <Button
+        onPress={() => {
+          Alert.alert("YO ALERT", "all fine");
+        }}
+      >
+        {" "}
+        Alert{" "}
+      </Button>
     </View>
   );
 };

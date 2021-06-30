@@ -1,12 +1,11 @@
 import React from "react";
-import { StyleSheet, Text, Button, View } from "react-native";
+import { TouchableOpacity, StyleSheet, Text, Button, View } from "react-native";
 
 const Header = ({ nav }) => {
   return (
-    <View style={styles.header}>
-      <Button title="drawer" onPress={() => nav.toggleDrawer()} />
-      <Text></Text>
-    </View>
+    <TouchableOpacity style={styles.header} onPress={() => nav.toggleDrawer()}>
+      <Text>Open Drawer</Text>
+    </TouchableOpacity>
   );
 };
 
@@ -15,6 +14,7 @@ export default Header;
 const styles = StyleSheet.create({
   header: {
     backgroundColor: "skyblue",
-    height: "10%",
+    alignItems: "center",
+    alignSelf: "center",
   },
 });
