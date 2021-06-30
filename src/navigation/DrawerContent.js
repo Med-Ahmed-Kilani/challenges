@@ -54,6 +54,15 @@ const DrawerContent = (props) => {
               props.navigation.navigate("stackNav", { screen: "ex5" });
             }}
           />
+          <DrawerItem
+            icon={({ color, size }) => (
+              <Feather name="user" color={color} size={size} />
+            )}
+            label="ex6"
+            onPress={() => {
+              props.navigation.navigate("stackNav", { screen: "ex6" });
+            }}
+          />
         </Drawer.Section>
       </View>
     </DrawerContentScrollView>
