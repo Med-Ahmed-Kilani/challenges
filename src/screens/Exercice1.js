@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, StatusBar } from "react-native";
+import { Button } from "react-native-paper";
 import Header from "../components/Header";
 
 const Exercice1 = ({ navigation }) => {

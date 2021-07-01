@@ -8,6 +8,8 @@ import Exercice6 from "../screens/Exercice6";
 import Exercice7 from "../screens/Exercice7";
 import Exercice8 from "../screens/Exercice8";
 import Exercice9 from "../screens/Exercice9";
+import Exercice11 from "../screens/Exercice11";
+import Exercice12 from "../screens/Exercice12";
 
 const StackNav = () => {
   const Stack = createStackNavigator();
@@ -20,6 +22,8 @@ const StackNav = () => {
       <Stack.Screen name="ex7" component={Exercice7} />
       <Stack.Screen name="ex8" component={Exercice8} />
       <Stack.Screen name="ex9" component={Exercice9} />
+      <Stack.Screen name="ex11" component={Exercice11} />
+      <Stack.Screen name="ex12" component={Exercice12} />
     </Stack.Navigator>
   );
 };

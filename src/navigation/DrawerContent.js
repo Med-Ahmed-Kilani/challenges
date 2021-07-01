@@ -89,6 +89,15 @@ const DrawerContent = (props) => {
             onPress={() => {
               props.navigation.navigate("stackNav", { screen: "ex9" });
             }}
+          />{" "}
+          <DrawerItem
+            icon={({ color, size }) => (
+              <Feather name="user" color={color} size={size} />
+            )}
+            label="ex11"
+            onPress={() => {
+              props.navigation.navigate("stackNav", { screen: "ex11" });
+            }}
           />
         </Drawer.Section>
       </View>

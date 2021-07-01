@@ -11,7 +11,8 @@ const Exercice3 = ({ navigation }) => {
       <Text>Exercice 3</Text>
       <CustButton message={"hello"} />
       <CustButton message={"goodbye"} />
-      <Button onPress={() => navigation.navigate("ex4")}> test</Button>
+      <Button onPress={() => navigation.navigate("ex4")}> Go to ex4</Button>
+      <Button onPress={() => navigation.navigate("ex12")}>Go to ex12</Button>
     </View>
   );
 };

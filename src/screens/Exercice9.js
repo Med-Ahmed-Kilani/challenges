@@ -20,6 +20,7 @@ const Exercice9 = () => {
   return (
     <View style={{ flex: 1 }}>
       <Text>Hello ex9 !</Text>
+
       <FlatList
         data={users}
         renderItem={({ item, index }) => (
